@@ -1,8 +1,8 @@
 package bridge;
 
-public class JavaDeveloper1 implements Developer {
+public class CppDeveloper implements Developer {
     @Override
     public void writeCode() {
-        System.out.println("Java developer wites java code...");
+        System.out.println("C++ developer wites C++ code...");
     }
 }

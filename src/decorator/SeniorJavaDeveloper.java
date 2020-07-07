@@ -1,4 +1,16 @@
 package decorator;
 
-public class SeniorJavaDeveloper {
+public class SeniorJavaDeveloper extends DeveloeprDecaorator {
+    public SeniorJavaDeveloper(Developer developer) {
+        super(developer);
+    }
+
+    public String makeCodeReview() {
+        return "make code review";
+    }
+
+    @Override
+    public String makeJob() {
+        return super.makeJob()+" "+makeCodeReview();
+    }
 }

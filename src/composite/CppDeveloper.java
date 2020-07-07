@@ -1,4 +1,8 @@
 package composite;
 
-public class CppDeveloper {
+public class CppDeveloper  implements Developer{
+    @Override
+    public void writeCode() {
+        System.out.println("C++ developer wites c++ code...");
+    }
 }

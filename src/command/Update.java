@@ -1,4 +1,16 @@
 package command;
 
-public class Update {
+import adapter.Database;
+
+public class Update implements  Command {
+    DataBase database;
+
+    public Update(DataBase database) {
+        this.database = database;
+    }
+
+    @Override
+    public void execute() {
+        database.update();
+    }
 }
